@@ -11,7 +11,6 @@ import {
   ListItemText,
   Fab,
   Link,
-  Slide,
   Fade,
   GridList,
   GridListTile,
@@ -19,16 +18,23 @@ import {
   CardMedia,
   CardContent,
   CardActions,
+  CardActionArea,
+  Grow,
+  GridListTileBar,
 } from "@material-ui/core"
 import Layout from "../components/layout"
 import { Link as GatsbyLink } from "gatsby"
 import appleIcon from "../svg/apple.svg"
 import unityIcon from "../svg/unity.svg"
 import unrealIcon from "../svg/unrealengine.svg"
-import raceKitImage from "../img/racekit.png"
-import baseballoonsImage from "../img/baseballoons.png"
+import racekitSplashImage from "../img/racekit-splash.png"
+import darksectorSplashImage from "../img/darksector-splash.png"
+import nuclearWinterSplashImage from "../img/nuclearwinter-splash.png"
 import baseballoonsSplashImage from "../img/baseballoons-splash.png"
 import springshapesSplashImage from "../img/springshapes-splash.png"
+import mogulmountainSplashImage from "../img/mogulmountain-splash.png"
+import raceKitImage from "../img/racekit.png"
+import baseballoonsImage from "../img/baseballoons.png"
 import prototypeData from "../img/prototypeData"
 
 export default function Home() {
@@ -74,63 +80,184 @@ export default function Home() {
         </Box>
       </Container>
       <Container maxWidth="md">
+        <Typography variant="h5" gutterBottom>
+          Released Projects
+        </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
-            <Card variant="outlined">
-              <CardMedia
-                image={baseballoonsSplashImage}
-                title="baseballoons splash"
-                style={{ height: 200 }}
-              />
-              <CardContent>
-                <Typography variant="h5">Baseballoons</Typography>
-                <Typography variant="body2" color="textSecondary">
-                  Description goes here. Description goes here. Description goes
-                  here. Description goes here. Description goes here.
-                </Typography>
-              </CardContent>
-              <CardActions disableSpacing={true}>
-                <Box width={30} mx={1}>
-                  <img src={appleIcon} alt="apple icon" />
-                </Box>
-                <Box width={30} mx={1}>
-                  <img src={unityIcon} alt="unity icon" />
-                </Box>
-              </CardActions>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Card variant="outlined">
-              <CardMedia
-                image={springshapesSplashImage}
-                title="spring shapes splash"
-                style={{ height: 200 }}
-              />
-              <CardContent>
-                <Typography variant="h5">Spring Shapes</Typography>
-                <Typography variant="body2" color="textSecondary">
-                  Description goes here. Description goes here. Description goes
-                  here. Description goes here. Description goes here.
-                </Typography>
-              </CardContent>
-              <CardActions disableSpacing={true}>
-                <Box width={30} mx={1}>
-                  <img src={appleIcon} alt="apple icon" />
-                </Box>
-                <Box width={30} mx={1}>
-                  <img src={unityIcon} alt="unity icon" />
-                </Box>
-              </CardActions>
-            </Card>
-          </Grid>
+          <Grow in timeout={1250}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardActionArea
+                  component={Link}
+                  href="https://www.unrealengine.com/marketplace/en-US/product/race-kit"
+                >
+                  <CardMedia
+                    image={racekitSplashImage}
+                    title="race kit splash"
+                    style={{ height: 200 }}
+                  />
+                  <CardContent>
+                    <Typography variant="h5">Race Kit</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Description goes here. Description goes here. Description
+                      goes here. Description goes here. Description goes here.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions disableSpacing={true}>
+                  <Box width={30} mx={1}>
+                    <img src={unrealIcon} alt="unreal icon" />
+                  </Box>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1500}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardActionArea>
+                  <CardMedia
+                    image={darksectorSplashImage}
+                    title="dark sector splash"
+                    style={{ height: 200 }}
+                  />
+                  <CardContent>
+                    <Typography variant="h5">Dark Sector</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Description goes here. Description goes here. Description
+                      goes here. Description goes here. Description goes here.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions disableSpacing={true}>
+                  <Box width={30} mx={1}>
+                    <img src={unrealIcon} alt="unreal icon" />
+                  </Box>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1750}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardActionArea>
+                  <CardMedia
+                    image={nuclearWinterSplashImage}
+                    title="nuclear winter splash"
+                    style={{ height: 200 }}
+                  />
+                  <CardContent>
+                    <Typography variant="h5">Nuclear Winter</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Description goes here. Description goes here. Description
+                      goes here. Description goes here. Description goes here.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions disableSpacing={true}>
+                  <Box width={30} mx={1}>
+                    <img src={unrealIcon} alt="unreal icon" />
+                  </Box>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1250}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardActionArea
+                  component={Link}
+                  href="https://apps.apple.com/us/app/baseballoons/id1245697230?ls=1"
+                >
+                  <CardMedia
+                    image={baseballoonsSplashImage}
+                    title="baseballoons splash"
+                    style={{ height: 200 }}
+                  />
+                  <CardContent>
+                    <Typography variant="h5">Baseballoons</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Description goes here. Description goes here. Description
+                      goes here. Description goes here. Description goes here.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions disableSpacing={true}>
+                  <Box width={30} mx={1}>
+                    <img src={appleIcon} alt="apple icon" />
+                  </Box>
+                  <Box width={30} mx={1}>
+                    <img src={unityIcon} alt="unity icon" />
+                  </Box>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1500}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardActionArea>
+                  <CardMedia
+                    image={mogulmountainSplashImage}
+                    title="mogul mountain splash"
+                    style={{ height: 200 }}
+                  />
+                  <CardContent>
+                    <Typography variant="h5">Mogul Mountain</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Description goes here. Description goes here. Description
+                      goes here. Description goes here. Description goes here.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions disableSpacing={true}>
+                  <Box width={30} mx={1}>
+                    <img src={appleIcon} alt="apple icon" />
+                  </Box>
+                  <Box width={30} mx={1}>
+                    <img src={unityIcon} alt="unity icon" />
+                  </Box>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1750}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardActionArea>
+                  <CardMedia
+                    image={springshapesSplashImage}
+                    title="spring shapes splash"
+                    style={{ height: 200 }}
+                  />
+                  <CardContent>
+                    <Typography variant="h5">Spring Shapes</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Description goes here. Description goes here. Description
+                      goes here. Description goes here. Description goes here.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions disableSpacing={true}>
+                  <Box width={30} mx={1}>
+                    <img src={appleIcon} alt="apple icon" />
+                  </Box>
+                  <Box width={30} mx={1}>
+                    <img src={unityIcon} alt="unity icon" />
+                  </Box>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
         </Grid>
       </Container>
+      {/* 
       <Container maxWidth="sm">
         <Typography variant="h6" align="center" gutterBottom>
           Quick Facts
         </Typography>
         <Grid container spacing={2}>
-          <Slide in direction="right" timeout={1000}>
+          <Fade in timeout={1000}>
             <Grid item xs={6}>
               <Paper variant="outlined" square>
                 <Box display="flex" justifyContent="center" my={2}>
@@ -169,8 +296,8 @@ export default function Home() {
                 </List>
               </Paper>
             </Grid>
-          </Slide>
-          <Slide in direction="left" timeout={1000}>
+          </Fade>
+          <Fade in timeout={1000}>
             <Grid item xs={6}>
               <Paper variant="outlined" square>
                 <Box display="flex" justifyContent="center" my={2}>
@@ -216,9 +343,10 @@ export default function Home() {
                 </List>
               </Paper>
             </Grid>
-          </Slide>
+          </Fade>
         </Grid>
       </Container>
+      */}
       <Box bgcolor="primary.light" p={5} mt={2}>
         <Container maxWidth="sm">
           <Grid container direction="row-reverse">

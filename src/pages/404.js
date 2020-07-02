@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <Layout header1="Page Not Found" hasBackButton={true}>
       <Container maxWidth="sm">
-        <Box my={10}>
+        <Box my={4}>
           <Typography variant="h4" gutterBottom>
             Page Not Found
           </Typography>
