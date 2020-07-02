@@ -15,6 +15,10 @@ import {
   Fade,
   GridList,
   GridListTile,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
 } from "@material-ui/core"
 import Layout from "../components/layout"
 import { Link as GatsbyLink } from "gatsby"
@@ -23,6 +27,8 @@ import unityIcon from "../svg/unity.svg"
 import unrealIcon from "../svg/unrealengine.svg"
 import raceKitImage from "../img/racekit.png"
 import baseballoonsImage from "../img/baseballoons.png"
+import baseballoonsSplashImage from "../img/baseballoons-splash.png"
+import springshapesSplashImage from "../img/springshapes-splash.png"
 import prototypeData from "../img/prototypeData"
 
 export default function Home() {
@@ -67,6 +73,58 @@ export default function Home() {
           </Grid>
         </Box>
       </Container>
+      <Container maxWidth="md">
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Card variant="outlined">
+              <CardMedia
+                image={baseballoonsSplashImage}
+                title="baseballoons splash"
+                style={{ height: 200 }}
+              />
+              <CardContent>
+                <Typography variant="h5">Baseballoons</Typography>
+                <Typography variant="body2" color="textSecondary">
+                  Description goes here. Description goes here. Description goes
+                  here. Description goes here. Description goes here.
+                </Typography>
+              </CardContent>
+              <CardActions disableSpacing={true}>
+                <Box width={30} mx={1}>
+                  <img src={appleIcon} alt="apple icon" />
+                </Box>
+                <Box width={30} mx={1}>
+                  <img src={unityIcon} alt="unity icon" />
+                </Box>
+              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Card variant="outlined">
+              <CardMedia
+                image={springshapesSplashImage}
+                title="spring shapes splash"
+                style={{ height: 200 }}
+              />
+              <CardContent>
+                <Typography variant="h5">Spring Shapes</Typography>
+                <Typography variant="body2" color="textSecondary">
+                  Description goes here. Description goes here. Description goes
+                  here. Description goes here. Description goes here.
+                </Typography>
+              </CardContent>
+              <CardActions disableSpacing={true}>
+                <Box width={30} mx={1}>
+                  <img src={appleIcon} alt="apple icon" />
+                </Box>
+                <Box width={30} mx={1}>
+                  <img src={unityIcon} alt="unity icon" />
+                </Box>
+              </CardActions>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
       <Container maxWidth="sm">
         <Typography variant="h6" align="center" gutterBottom>
           Quick Facts
@@ -77,7 +135,7 @@ export default function Home() {
               <Paper variant="outlined" square>
                 <Box display="flex" justifyContent="center" my={2}>
                   <Box width={40}>
-                    <img src={unrealIcon} alt="apple icon" />
+                    <img src={unrealIcon} alt="unreal icon" />
                   </Box>
                 </Box>
                 <Typography variant="subtitle2" align="center" gutterBottom>
@@ -223,7 +281,7 @@ export default function Home() {
       </Box>
       <Box my={2}>
         <Container maxWidth="sm">
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h5" gutterBottom>
             Prototypes
           </Typography>
           <Typography variant="subtitle2">
