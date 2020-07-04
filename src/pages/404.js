@@ -4,7 +4,7 @@ import { Container, Typography, Box } from "@material-ui/core"
 
 export default function NotFound() {
   return (
-    <Layout header1="Page Not Found" hasBackButton={true}>
+    <Layout header1="Page Not Found" hasBackButton>
       <Container maxWidth="sm">
         <Box my={4}>
           <Typography variant="h4" gutterBottom>

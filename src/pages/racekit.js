@@ -4,7 +4,7 @@ import { Container, Typography, Box } from "@material-ui/core"
 
 export default function RaceKit() {
   return (
-    <Layout header1="Race Kit Case Study" hasBackButton={true}>
+    <Layout header1="Race Kit Case Study">
       <Container maxWidth="sm">
         <Box my={4}>
           <Typography variant="h4" gutterBottom>

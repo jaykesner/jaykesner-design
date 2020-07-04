@@ -49,11 +49,6 @@ export default function Home() {
                 <Typography variant="h5">
                   a game designer and developer
                 </Typography>
-                <Box my={4}>
-                  <Fab variant="extended" color="primary">
-                    Read My Story
-                  </Fab>
-                </Box>
               </Grid>
             </Fade>
             <Fade in timeout={1650}>
@@ -64,9 +59,12 @@ export default function Home() {
                     developer. <strong>Pragmatic</strong> and{" "}
                     <strong>solutions-oriented </strong>
                     with a passion for <strong>scripting</strong> and{" "}
-                    <strong>game engines</strong>. I stay learning to chase the
-                    next great idea at the intersection of programming, art, and
-                    sound.
+                    <strong>game engines</strong>.
+                  </Typography>
+                  <Typography variant="subtitle1" gutterBottom>
+                    I love to learn new ways of combining programming, art, and
+                    sound to create the next great experience, realizing
+                    projects from idea to implementation.
                   </Typography>
                   <Typography variant="subtitle1">
                     I'm currently working as a solo developer for the company I
@@ -80,9 +78,11 @@ export default function Home() {
         </Box>
       </Container>
       <Container maxWidth="md">
-        <Typography variant="h5" gutterBottom>
-          Released Projects
-        </Typography>
+        <Fade in timeout={1000}>
+          <Typography variant="h5" gutterBottom>
+            Released Projects
+          </Typography>
+        </Fade>
         <Grid container spacing={2}>
           <Grow in timeout={1250}>
             <Grid item xs={12} sm={6} md={4}>
