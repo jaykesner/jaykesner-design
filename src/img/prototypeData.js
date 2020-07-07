@@ -1,5 +1,3 @@
-import placeholderImage from "../img/game-placeholder.jpg"
-
 import boostKartImage from "./boost-kart.gif"
 import swingUp3D from "./swing3D-2.gif"
 import physCharacter from "./phys-character.gif"

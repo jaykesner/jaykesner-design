@@ -1,14 +1,9 @@
 import React from "react"
 import {
-  Paper,
   Typography,
   Box,
   Container,
   Grid,
-  Divider,
-  List,
-  ListItem,
-  ListItemText,
   Fab,
   Link,
   Fade,
@@ -20,7 +15,6 @@ import {
   CardActions,
   CardActionArea,
   Grow,
-  GridListTileBar,
 } from "@material-ui/core"
 import Layout from "../components/layout"
 import { Link as GatsbyLink } from "gatsby"
@@ -39,7 +33,7 @@ import prototypeData from "../img/prototypeData"
 
 export default function Home() {
   return (
-    <Layout header1="Jay Kesner" header2="Game Design Portfolio">
+    <Layout header1="Game Design Portfolio" header2="Jay Kesner">
       <Container maxWidth="md">
         <Box my={4}>
           <Grid container>
@@ -98,13 +92,16 @@ export default function Home() {
                   />
                   <CardContent>
                     <Typography variant="h5">Race Kit</Typography>
+                    <Typography variant="caption" color="textSecondary">
+                      Solo Developer
+                    </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Description goes here. Description goes here. Description
-                      goes here. Description goes here. Description goes here.
+                      Race Kit is a positional racing system created using
+                      Blueprints for the Unreal Engine 4 Marketplace.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing={true}>
+                <CardActions disableSpacing>
                   <Box width={30} mx={1}>
                     <img src={unrealIcon} alt="unreal icon" />
                   </Box>
@@ -123,13 +120,16 @@ export default function Home() {
                   />
                   <CardContent>
                     <Typography variant="h5">Dark Sector</Typography>
+                    <Typography variant="caption" color="textSecondary">
+                      Solo Developer
+                    </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Description goes here. Description goes here. Description
-                      goes here. Description goes here. Description goes here.
+                      Dark Sector is a 3D first person shooter made for an
+                      Unreal Engine 4 mega jam.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing={true}>
+                <CardActions disableSpacing>
                   <Box width={30} mx={1}>
                     <img src={unrealIcon} alt="unreal icon" />
                   </Box>
@@ -148,13 +148,16 @@ export default function Home() {
                   />
                   <CardContent>
                     <Typography variant="h5">Nuclear Winter</Typography>
+                    <Typography variant="caption" color="textSecondary">
+                      Solo Developer
+                    </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Description goes here. Description goes here. Description
-                      goes here. Description goes here. Description goes here.
+                      Nuclear Winter is a top down 2D pixel art action game made
+                      for an Unreal Engine 4 game jam.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing={true}>
+                <CardActions disableSpacing>
                   <Box width={30} mx={1}>
                     <img src={unrealIcon} alt="unreal icon" />
                   </Box>
@@ -176,13 +179,16 @@ export default function Home() {
                   />
                   <CardContent>
                     <Typography variant="h5">Baseballoons</Typography>
+                    <Typography variant="caption" color="textSecondary">
+                      Solo Developer
+                    </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Description goes here. Description goes here. Description
-                      goes here. Description goes here. Description goes here.
+                      Baseballoons is a colorful 3D home run contest made for
+                      the Apple App Store.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing={true}>
+                <CardActions disableSpacing>
                   <Box width={30} mx={1}>
                     <img src={appleIcon} alt="apple icon" />
                   </Box>
@@ -204,13 +210,16 @@ export default function Home() {
                   />
                   <CardContent>
                     <Typography variant="h5">Mogul Mountain</Typography>
+                    <Typography variant="caption" color="textSecondary">
+                      Design & Programming
+                    </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Description goes here. Description goes here. Description
-                      goes here. Description goes here. Description goes here.
+                      Mogul Mountain is a 2D pixel art mogul ski challenge made
+                      for the Apple App Store.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing={true}>
+                <CardActions disableSpacing>
                   <Box width={30} mx={1}>
                     <img src={appleIcon} alt="apple icon" />
                   </Box>
@@ -232,13 +241,16 @@ export default function Home() {
                   />
                   <CardContent>
                     <Typography variant="h5">Spring Shapes</Typography>
+                    <Typography variant="caption" color="textSecondary">
+                      Solo Developer
+                    </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Description goes here. Description goes here. Description
-                      goes here. Description goes here. Description goes here.
+                      Spring shapes is a flingy 2D vector based shape course
+                      made for the Apple App Store.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing={true}>
+                <CardActions disableSpacing>
                   <Box width={30} mx={1}>
                     <img src={appleIcon} alt="apple icon" />
                   </Box>
@@ -251,175 +263,95 @@ export default function Home() {
           </Grow>
         </Grid>
       </Container>
-      {/* 
-      <Container maxWidth="sm">
-        <Typography variant="h6" align="center" gutterBottom>
-          Quick Facts
-        </Typography>
-        <Grid container spacing={2}>
-          <Fade in timeout={1000}>
-            <Grid item xs={6}>
-              <Paper variant="outlined" square>
-                <Box display="flex" justifyContent="center" my={2}>
-                  <Box width={40}>
-                    <img src={unrealIcon} alt="unreal icon" />
-                  </Box>
-                </Box>
-                <Typography variant="subtitle2" align="center" gutterBottom>
-                  Released Unreal Engine projects
-                </Typography>
-                <Box px={1}>
-                  <Divider />
-                </Box>
-                <List>
-                  <ListItem>
-                    <ListItemText
-                      align="center"
-                      primary="Race Kit"
-                      secondary="Marketplace Asset"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      align="center"
-                      primary="Dark Sector"
-                      secondary="UE4 Mega Jam Entry"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      align="center"
-                      primary="Nuclear Winter"
-                      secondary="Winter UE4 Jam Entry"
-                    />
-                  </ListItem>
-                </List>
-              </Paper>
-            </Grid>
-          </Fade>
-          <Fade in timeout={1000}>
-            <Grid item xs={6}>
-              <Paper variant="outlined" square>
-                <Box display="flex" justifyContent="center" my={2}>
-                  <Box width={40} mx={1}>
-                    <img src={appleIcon} alt="apple icon" />
-                  </Box>
-                  <Box width={40} mx={1}>
-                    <img src={unityIcon} alt="apple icon" />
-                  </Box>
-                </Box>
-                <Typography variant="subtitle2" align="center" gutterBottom>
-                  Shipped iOS projects
-                </Typography>
-                <Box px={1}>
-                  <Divider />
-                </Box>
-                <List>
-                  <ListItem
-                    button
-                    component={Link}
-                    href="https://apps.apple.com/us/app/baseballoons/id1245697230?ls=1"
-                  >
-                    <ListItemText
-                      align="center"
-                      primary="Baseballoons"
-                      secondary="3D Home Run Contest"
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <ListItemText
-                      align="center"
-                      primary="Spring Shapes"
-                      secondary="Endless Springy Course"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      align="center"
-                      primary="Mogul Mountain"
-                      secondary="Frantic Downhill Ski"
-                    />
-                  </ListItem>
-                </List>
-              </Paper>
-            </Grid>
-          </Fade>
-        </Grid>
-      </Container>
-      */}
       <Box bgcolor="primary.light" p={5} mt={2}>
         <Container maxWidth="sm">
           <Grid container direction="row-reverse">
-            <Grid item xs={12} sm={6}>
-              <Box textAlign="center" px={5} py={2}>
-                <img src={raceKitImage} width="150" alt="race kit" />
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Box color="common.white">
-                <Typography variant="h5">Race Kit Design</Typography>
-                <Typography variant="body1" gutterBottom>
-                  Check out how I used Blueprint Visual Scripting in Unreal
-                  Engine 4 to create a
-                </Typography>
-              </Box>
-              <Box mt={5}>
-                <Fab
-                  color="secondary"
-                  variant="extended"
-                  component={GatsbyLink}
-                  to="/racekit/"
-                >
-                  Read Case Study
-                </Fab>
-              </Box>
-            </Grid>
+            <Fade in timeout={1100}>
+              <Grid item xs={12} sm={6}>
+                <Box textAlign="center" px={5} py={2}>
+                  <img src={raceKitImage} width="150" alt="race kit" />
+                </Box>
+              </Grid>
+            </Fade>
+            <Fade in timeout={1250}>
+              <Grid item xs={12} sm={6}>
+                <Box color="common.white">
+                  <Typography variant="h5" gutterBottom>
+                    Race Kit Design
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    Check out how I used Blueprint Visual Scripting in Unreal
+                    Engine 4 to create an Unreal Engine 4 Marketplace asset.
+                  </Typography>
+                </Box>
+                <Box mt={5}>
+                  <Fab
+                    color="secondary"
+                    variant="extended"
+                    component={GatsbyLink}
+                    to="/racekit/"
+                  >
+                    Read Case Study
+                  </Fab>
+                </Box>
+              </Grid>
+            </Fade>
           </Grid>
         </Container>
       </Box>
       <Box bgcolor="primary.main" p={5}>
         <Container maxWidth="sm">
           <Grid container>
-            <Grid item xs={12} sm={6}>
-              <Box textAlign="center" py={2}>
-                <img src={baseballoonsImage} alt="baseballoons" width="150" />
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Box color="common.white">
-                <Typography variant="h5">Baseballoons Design</Typography>
-                <Typography variant="body1" gutterBottom>
-                  Find out how inspiration from a physical arcade game fueled
-                  the creation of Baseballoons
-                </Typography>
-              </Box>
-              <Box mt={5}>
-                <Fab
-                  color="secondary"
-                  variant="extended"
-                  component={GatsbyLink}
-                  to="/baseballoons/"
-                >
-                  Read Case Study
-                </Fab>
-              </Box>
-            </Grid>
+            <Fade in timeout={1500}>
+              <Grid item xs={12} sm={6}>
+                <Box textAlign="center" py={2}>
+                  <img src={baseballoonsImage} alt="baseballoons" width="150" />
+                </Box>
+              </Grid>
+            </Fade>
+            <Fade in timeout={1750}>
+              <Grid item xs={12} sm={6}>
+                <Box color="common.white">
+                  <Typography variant="h5" gutterBottom>
+                    Baseballoons Design
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    Find out how inspiration from a local arcade game fueled the
+                    creation of Baseballoons.
+                  </Typography>
+                </Box>
+                <Box mt={5}>
+                  <Fab
+                    color="secondary"
+                    variant="extended"
+                    component={GatsbyLink}
+                    to="/baseballoons/"
+                  >
+                    Read Case Study
+                  </Fab>
+                </Box>
+              </Grid>
+            </Fade>
           </Grid>
         </Container>
       </Box>
       <Box my={2}>
         <Container maxWidth="sm">
-          <Typography variant="h5" gutterBottom>
-            Prototypes
-          </Typography>
-          <Typography variant="subtitle2">
-            Not every idea makes it, but something is always learned!
-          </Typography>
+          <Fade in timeout={1200}>
+            <Typography variant="h5" gutterBottom>
+              Prototypes
+            </Typography>
+          </Fade>
+          <Fade in timeout={1450}>
+            <Typography variant="subtitle2">
+              Not every idea makes it, but something is always learned!
+            </Typography>
+          </Fade>
         </Container>
       </Box>
       <Container maxWidth="sm">
         <GridList cellHeight={160} cols={3}>
-          {prototypeData.map(tile => (
+          {prototypeData.map((tile, index) => (
             <GridListTile
               key={tile.title}
               cols={tile.cols || 1}

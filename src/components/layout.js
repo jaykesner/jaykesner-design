@@ -10,12 +10,16 @@ import {
 } from "@material-ui/core"
 import KeyboardBackspaceRoundedIcon from "@material-ui/icons/KeyboardBackspaceRounded"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 export default function Layout(props) {
   const { children, header1, header2, hasBackButton } = props
   return (
     <>
       <CssBaseline />
+      <Helmet>
+        <title>Jay Kesner - {header1}</title>
+      </Helmet>
       <AppBar position="static" elevation={0}>
         <Toolbar>
           {hasBackButton ? (
