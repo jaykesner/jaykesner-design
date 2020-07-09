@@ -7,13 +7,15 @@ import {
   Box,
   IconButton,
   Divider,
+  Link as MaterialLink,
 } from "@material-ui/core"
 import KeyboardBackspaceRoundedIcon from "@material-ui/icons/KeyboardBackspaceRounded"
+import MailOutlineRoundedIcon from "@material-ui/icons/MailOutlineRounded"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
 export default function Layout(props) {
-  const { children, header1, header2, hasBackButton } = props
+  const { children, header1, header2, hasBackButton, hasEmailButton } = props
   return (
     <>
       <CssBaseline />
@@ -31,6 +33,15 @@ export default function Layout(props) {
           ) : null}
           <Typography variant="h6">{header1}</Typography>
           <Box flexGrow={1} />
+          {hasEmailButton ? (
+            <IconButton
+              color="inherit"
+              component={MaterialLink}
+              href="mailto:jaykesner@gmail.com"
+            >
+              <MailOutlineRoundedIcon />
+            </IconButton>
+          ) : null}
           <Typography variant="h6">{header2}</Typography>
         </Toolbar>
       </AppBar>

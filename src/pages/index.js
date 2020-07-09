@@ -33,7 +33,7 @@ import prototypeData from "../img/prototypeData"
 
 export default function Home() {
   return (
-    <Layout header1="Game Design Portfolio" header2="Jay Kesner">
+    <Layout header1="Game Design Portfolio" header2="Jay Kesner" hasEmailButton>
       <Container maxWidth="md">
         <Box my={4}>
           <Grid container>
