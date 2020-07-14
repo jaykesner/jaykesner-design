@@ -234,9 +234,9 @@ export default function RaceKit() {
             Finishing touches
           </Typography>
           <Typography variant="body1" gutterBottom>
-            The finals pieces of creating Race Kit involved making a sample
-            level to demonstrate and explain the functionality. I also created a
-            UI using UMG widgets to demonstrate the placements and data Race Kit
+            The final pieces of creating Race Kit involved making a sample level
+            to demonstrate and explain the functionality. I also created a UI
+            using UMG widgets to demonstrate the placements and data Race Kit
             can provide.
           </Typography>
           <Typography variant="body1" gutterBottom>

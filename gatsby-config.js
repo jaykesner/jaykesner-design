@@ -3,7 +3,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto\:300,400,500,700`],
+        fonts: [`poppins\:300,400,500,700`],
         display: `swap`,
       },
     },
@@ -11,3 +11,5 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
   ],
 }
+
+// default font: `roboto\:300,400,500,700`

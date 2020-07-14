@@ -8,10 +8,11 @@ import {
   IconButton,
   Divider,
   Link as MaterialLink,
+  Tooltip,
 } from "@material-ui/core"
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import primaryColor from "@material-ui/core/colors/red"
-import secondaryColor from "@material-ui/core/colors/blue"
+import secondaryColor from "@material-ui/core/colors/green"
 import KeyboardBackspaceRoundedIcon from "@material-ui/icons/KeyboardBackspaceRounded"
 import MailOutlineRoundedIcon from "@material-ui/icons/MailOutlineRounded"
 import { Link } from "gatsby"
@@ -20,12 +21,21 @@ import { Helmet } from "react-helmet"
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: primaryColor[900],
+      main: primaryColor[800],
     },
     secondary: {
-      main: secondaryColor[700],
+      main: secondaryColor["A400"],
     },
     type: "dark",
+  },
+  typography: {
+    fontFamily: "Poppins",
+    h4: {
+      fontWeight: 700,
+    },
+    h5: {
+      fontWeight: 700,
+    },
   },
 })
 
@@ -49,13 +59,15 @@ export default function Layout(props) {
           <Typography variant="h6">{header1}</Typography>
           <Box flexGrow={1} />
           {hasEmailButton ? (
-            <IconButton
-              color="inherit"
-              component={MaterialLink}
-              href="mailto:jaykesner@gmail.com"
-            >
-              <MailOutlineRoundedIcon />
-            </IconButton>
+            <Tooltip title="Email me!" arrow>
+              <IconButton
+                color="inherit"
+                component={MaterialLink}
+                href="mailto:jaykesner@gmail.com"
+              >
+                <MailOutlineRoundedIcon />
+              </IconButton>
+            </Tooltip>
           ) : null}
           <Typography variant="h6">{header2}</Typography>
         </Toolbar>
