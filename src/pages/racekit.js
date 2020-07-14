@@ -22,9 +22,11 @@ export default function RaceKit() {
           </Typography>
           <Typography variant="body1" gutterBottom>
             Race Kit is a positional tracking system made using Blueprint visual
-            scripting for the Unreal Engine 4 marketplace. I aimed to provide a
-            system that is easy to understand, flexible, accurate, and works
-            with multiplayer.
+            scripting for the Unreal Engine 4 marketplace. As soon as I played
+            with the sample vehicle in UE4, I knew an asset for racing games
+            would be a valuable resource for the incredible UE4 community. I
+            aimed to provide a system that is easy to understand, flexible,
+            accurate, and works with multiplayer.
           </Typography>
           <Box textAlign="center" m={4}>
             <img

@@ -56,9 +56,9 @@ export default function Home() {
                     <strong>game engines</strong>.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom>
-                    I love to learn new ways of combining programming, art, and
-                    sound to create the next great experience, realizing
-                    projects from idea to implementation.
+                    I love to learn new and creative ways of combining
+                    programming, art, and sound to make the next great
+                    experience, realizing projects from idea to implementation.
                   </Typography>
                   <Typography variant="subtitle1">
                     I'm currently working as a solo developer for the company I
@@ -280,8 +280,8 @@ export default function Home() {
                     Race Kit Design
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    Check out how I used Blueprint Visual Scripting in Unreal
-                    Engine 4 to create an Unreal Engine 4 Marketplace asset.
+                    Check out how I used Blueprint visual scripting in Unreal
+                    Engine 4 to create an asset for the UE4 marketplace.
                   </Typography>
                 </Box>
                 <Box mt={5}>
