@@ -300,7 +300,7 @@ export default function Home() {
             <Fade in timeout={1250}>
               <Grid item xs={12} sm={6}>
                 <Box color="common.white">
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h3" gutterBottom>
                     Race Kit Design
                   </Typography>
                   <Typography variant="body1" gutterBottom>
@@ -336,7 +336,7 @@ export default function Home() {
             <Fade in timeout={1750}>
               <Grid item xs={12} sm={6}>
                 <Box color="common.white">
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h3" gutterBottom>
                     Baseballoons Design
                   </Typography>
                   <Typography variant="body1" gutterBottom>
@@ -362,7 +362,7 @@ export default function Home() {
       <Box my={2}>
         <Container maxWidth="sm">
           <Fade in timeout={1200}>
-            <Typography variant="h5" gutterBottom>
+            <Typography variant="h4" gutterBottom>
               Prototypes
             </Typography>
           </Fade>

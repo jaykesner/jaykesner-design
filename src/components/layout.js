@@ -30,6 +30,9 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: "Poppins",
+    h3: {
+      fontWeight: 700,
+    },
     h4: {
       fontWeight: 700,
     },
