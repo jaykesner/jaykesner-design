@@ -175,10 +175,9 @@ export default function RaceKit() {
           </Box>
           <Typography variant="body1" gutterBottom>
             This illustration demonstrates the issue with a raw distance value.
-            The B racer is clearly closer to the check point than the A racer,
-            but because it's not at the center line of the check point it's
-            distance value will be larger, causing it to be placed behind the A
-            racer.
+            The B triangle is clearly closer to the red box than the A triangle,
+            but because it's not at the center line of the box it's distance
+            value will be larger, causing it to be placed behind the A triangle.
           </Typography>
           <Typography variant="body1" gutterBottom>
             The solution uses the magic of dot product. In Race Kit, the dot
