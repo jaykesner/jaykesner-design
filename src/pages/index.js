@@ -43,11 +43,21 @@ export default function Home() {
                 <Typography variant="h5">
                   a game designer and developer
                 </Typography>
+                <Box my={4}>
+                  <Fab
+                    variant="extended"
+                    color="primary"
+                    component={GatsbyLink}
+                    to="/aboutme/"
+                  >
+                    Read About Me
+                  </Fab>
+                </Box>
               </Grid>
             </Fade>
             <Fade in timeout={1650}>
               <Grid item xs={12} sm={6}>
-                <Box py={1}>
+                <Box my={1}>
                   <Typography variant="subtitle1" gutterBottom>
                     I'm a North Carolina based independent game designer and
                     developer. <strong>Pragmatic</strong> and{" "}
