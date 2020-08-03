@@ -49,6 +49,10 @@ export default function Layout(props) {
       <CssBaseline />
       <Helmet>
         <title>Jay Kesner - {header1}</title>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
       </Helmet>
       <AppBar position="static" elevation={0}>
         <Toolbar>
@@ -72,7 +76,9 @@ export default function Layout(props) {
               </IconButton>
             </Tooltip>
           ) : null}
-          <Typography variant="h6">{header2}</Typography>
+          <Typography align="right" variant="h6">
+            {header2}
+          </Typography>
         </Toolbar>
       </AppBar>
       {children}
