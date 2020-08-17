@@ -50,8 +50,7 @@ export default function Baseballoons() {
             model of a baseball bat just isn't the same. It felt inconsistent,
             and the available screen space to try to control the swing was
             limited. A single touch hold to pull back and let go, with a slower
-            bat pull back speed had was immediately more controllable, and more
-            fun.
+            bat pull back speed was immediately more controllable, and more fun.
           </Typography>
           <Box textAlign="center" m={4}>
             <img
@@ -102,7 +101,7 @@ export default function Baseballoons() {
           </Typography>
           <Typography variant="body1" gutterBottom>
             I decided to let clear misses simply not count for anything, play
-            on. Only hitting the out bombs would count as an out. This of course
+            on! Only hitting the out bombs would count as an out. This of course
             created much longer play sessions, but that just means more coins
             and more rewards, why not? Players found the game to be more fun and
             accessible, and I think a wider audience was able to enjoy the game.
