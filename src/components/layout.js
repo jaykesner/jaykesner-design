@@ -63,7 +63,7 @@ export default function Layout(props) {
               </IconButton>
             </Box>
           ) : null}
-          <Typography variant="h6">{header1}</Typography>
+          <Typography variant="subtitle2">{header1}</Typography>
           <Box flexGrow={1} />
           {hasEmailButton ? (
             <Tooltip title="Email me!" arrow>
@@ -76,7 +76,7 @@ export default function Layout(props) {
               </IconButton>
             </Tooltip>
           ) : null}
-          <Typography align="right" variant="h6">
+          <Typography align="right" variant="subtitle2">
             {header2}
           </Typography>
         </Toolbar>

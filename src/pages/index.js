@@ -21,6 +21,7 @@ import { Link as GatsbyLink } from "gatsby"
 import appleIcon from "../svg/apple.svg"
 import unityIcon from "../svg/unity.svg"
 import unrealIcon from "../svg/unrealengine.svg"
+import sonsOfImImage from "../img/sonsofim.png"
 import racekitSplashImage from "../img/racekit-splash.png"
 import darksectorSplashImage from "../img/darksector-splash.png"
 import nuclearWinterSplashImage from "../img/nuclearwinter-splash.png"
@@ -297,7 +298,42 @@ export default function Home() {
           </Grow>
         </Grid>
       </Container>
-      <Box bgcolor="primary.light" p={5} mt={2}>
+      <Box bgcolor="primary.main" p={5} mt={2}>
+        <Container maxWidth="sm">
+          <Grid container>
+            <Fade in timeout={1500}>
+              <Grid item xs={12} sm={6}>
+                <Box textAlign="center" py={2}>
+                  <img src={sonsOfImImage} alt="sonsofim" width="150" />
+                </Box>
+              </Grid>
+            </Fade>
+            <Fade in timeout={1750}>
+              <Grid item xs={12} sm={6}>
+                <Box color="common.white">
+                  <Typography variant="h3" gutterBottom>
+                    Sons of Im Design
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    Read the combat design doc for the unreleased Sons of Im.
+                  </Typography>
+                </Box>
+                <Box mt={5}>
+                  <Fab
+                    color="secondary"
+                    variant="extended"
+                    component={GatsbyLink}
+                    to="/sonsofim/"
+                  >
+                    Read Doc
+                  </Fab>
+                </Box>
+              </Grid>
+            </Fade>
+          </Grid>
+        </Container>
+      </Box>
+      <Box bgcolor="primary.light" p={5}>
         <Container maxWidth="sm">
           <Grid container direction="row-reverse">
             <Fade in timeout={1100}>
