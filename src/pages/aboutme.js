@@ -8,12 +8,7 @@ export default function AboutMe() {
     <Layout hasBackButton header1="About Me">
       <Container maxWidth="md">
         <Box display="flex" alignItems="center" mt={4}>
-          <img
-            src={myPhoto}
-            alt="Jay Kesner"
-            style={{ width: "100%", maxWidth: "120px", height: "auto" }}
-          />
-          <Box ml={4}>
+          <Box>
             <Typography variant="h3" gutterBottom>
               About Me
             </Typography>

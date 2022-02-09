@@ -50,7 +50,7 @@ export default function Home() {
                     component={GatsbyLink}
                     to="/aboutme/"
                   >
-                    Read About Me
+                    About Me
                   </Fab>
                 </Box>
               </Grid>
@@ -66,14 +66,9 @@ export default function Home() {
                     <strong>game engines</strong>.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom>
-                    I love to learn new and creative ways of combining
+                    I emjoy learing new and creative ways of combining
                     programming, art, and sound to make the next great
                     experience, realizing projects from ideas to implementation.
-                  </Typography>
-                  <Typography variant="subtitle1">
-                    I'm currently working as a solo developer for the company I
-                    helped create,{" "}
-                    <Link href="http://43kstudios.com/">43K Studios.</Link>
                   </Typography>
                 </Box>
               </Grid>
@@ -84,109 +79,10 @@ export default function Home() {
       <Container maxWidth="md">
         <Fade in timeout={1000}>
           <Typography variant="h5" gutterBottom>
-            Released Projects
+            Released Mobile Projects
           </Typography>
         </Fade>
         <Grid container spacing={2}>
-          <Grow in timeout={1250}>
-            <Grid item xs={12} sm={6} md={4}>
-              <Card variant="outlined" square>
-                <CardMedia
-                  image={racekitSplashImage}
-                  title="race kit splash"
-                  style={{ height: 200 }}
-                />
-                <CardContent>
-                  <Typography variant="h5">Race Kit</Typography>
-                  <Typography variant="caption" color="textSecondary">
-                    Solo Developer
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    Race Kit is a positional racing system created using
-                    Blueprints for the Unreal Engine 4 Marketplace.
-                  </Typography>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <Box width={30} mx={1}>
-                    <img src={unrealIcon} alt="unreal icon" />
-                  </Box>
-                  <Box flexGrow={1} />
-                  <Button
-                    size="small"
-                    href="https://www.unrealengine.com/marketplace/en-US/product/race-kit"
-                  >
-                    UE4 Marketplace
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          </Grow>
-          <Grow in timeout={1500}>
-            <Grid item xs={12} sm={6} md={4}>
-              <Card variant="outlined" square>
-                <CardMedia
-                  image={darksectorSplashImage}
-                  title="dark sector splash"
-                  style={{ height: 200 }}
-                />
-                <CardContent>
-                  <Typography variant="h5">Dark Sector</Typography>
-                  <Typography variant="caption" color="textSecondary">
-                    Solo Developer
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    Dark Sector is a 3D first person shooter made for an Unreal
-                    Engine 4 mega jam.
-                  </Typography>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <Box width={30} mx={1}>
-                    <img src={unrealIcon} alt="unreal icon" />
-                  </Box>
-                  <Box flexGrow={1} />
-                  <Button
-                    size="small"
-                    href="https://drive.google.com/file/d/13D469q7vsWBwr76AEA80yFDTwabdXCxs/view"
-                  >
-                    Google Drive
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          </Grow>
-          <Grow in timeout={1750}>
-            <Grid item xs={12} sm={6} md={4}>
-              <Card variant="outlined" square>
-                <CardMedia
-                  image={nuclearWinterSplashImage}
-                  title="nuclear winter splash"
-                  style={{ height: 200 }}
-                />
-                <CardContent>
-                  <Typography variant="h5">Nuclear Winter</Typography>
-                  <Typography variant="caption" color="textSecondary">
-                    Solo Developer
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    Nuclear Winter is a top down 2D pixel art action game made
-                    for an Unreal Engine 4 game jam.
-                  </Typography>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <Box width={30} mx={1}>
-                    <img src={unrealIcon} alt="unreal icon" />
-                  </Box>
-                  <Box flexGrow={1} />
-                  <Button
-                    size="small"
-                    href="https://43k.itch.io/nuclear-winter"
-                  >
-                    Itch.io
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          </Grow>
           <Grow in timeout={1250}>
             <Grid item xs={12} sm={6} md={4}>
               <Card variant="outlined" square>
@@ -195,14 +91,10 @@ export default function Home() {
                   title="baseballoons splash"
                   style={{ height: 200 }}
                 />
-                <CardContent>
+                <CardContent style={{ height: 120 }}>
                   <Typography variant="h5">Baseballoons</Typography>
-                  <Typography variant="caption" color="textSecondary">
-                    Solo Developer
-                  </Typography>
                   <Typography variant="body2" color="textSecondary">
-                    Baseballoons is a colorful 3D home run contest made for the
-                    Apple App Store.
+                    Colorful 3D home run contest made for the Apple App Store.
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
@@ -213,12 +105,7 @@ export default function Home() {
                     <img src={unityIcon} alt="unity icon" />
                   </Box>
                   <Box flexGrow={1} />
-                  <Button
-                    size="small"
-                    href="https://apps.apple.com/us/app/baseballoons/id1245697230?ls=1"
-                  >
-                    App Store
-                  </Button>
+                  <Button size="small">App Store</Button>
                 </CardActions>
               </Card>
             </Grid>
@@ -231,14 +118,14 @@ export default function Home() {
                   title="mogul mountain splash"
                   style={{ height: 200 }}
                 />
-                <CardContent>
+                <CardContent style={{ height: 120 }}>
                   <Typography variant="h5">Mogul Mountain</Typography>
                   <Typography variant="caption" color="textSecondary">
                     Design & Programming
                   </Typography>
                   <Typography variant="body2" color="textSecondary">
-                    Mogul Mountain is a 2D pixel art mogul ski challenge made
-                    for the Apple App Store.
+                    2D pixel art mogul ski challenge made for the Apple App
+                    Store.
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
@@ -267,14 +154,11 @@ export default function Home() {
                   title="spring shapes splash"
                   style={{ height: 200 }}
                 />
-                <CardContent>
+                <CardContent style={{ height: 120 }}>
                   <Typography variant="h5">Spring Shapes</Typography>
-                  <Typography variant="caption" color="textSecondary">
-                    Solo Developer
-                  </Typography>
                   <Typography variant="body2" color="textSecondary">
-                    Spring shapes is a flingy 2D vector based shape course made
-                    for the Apple App Store.
+                    Flingy 2D tapping challenge course made for the Apple App
+                    Store.
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
@@ -285,11 +169,105 @@ export default function Home() {
                     <img src={unityIcon} alt="unity icon" />
                   </Box>
                   <Box flexGrow={1} />
+                  <Button size="small">App Store</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+        </Grid>
+        <Fade in timeout={1000}>
+          <Box pt={2}>
+            <Typography variant="h5" gutterBottom>
+              Released PC Projects
+            </Typography>
+          </Box>
+        </Fade>
+        <Grid container spacing={2}>
+          <Grow in timeout={1250}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardMedia
+                  image={racekitSplashImage}
+                  title="race kit splash"
+                  style={{ height: 200 }}
+                />
+                <CardContent style={{ height: 120 }}>
+                  <Typography variant="h5">Race Kit</Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    Positional racing system created using Blueprints for the
+                    Unreal Engine 4 Marketplace.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <Box width={30} mx={1}>
+                    <img src={unrealIcon} alt="unreal icon" />
+                  </Box>
+                  <Box flexGrow={1} />
                   <Button
                     size="small"
-                    href="https://apps.apple.com/us/app/spring-shapes/id1036415420"
+                    href="https://www.unrealengine.com/marketplace/en-US/product/race-kit"
                   >
-                    App Store
+                    UE4 Marketplace
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1500}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardMedia
+                  image={darksectorSplashImage}
+                  title="dark sector splash"
+                  style={{ height: 200 }}
+                />
+                <CardContent style={{ height: 120 }}>
+                  <Typography variant="h5">Dark Sector</Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    3D first person shooter made for an Unreal Engine 4 mega
+                    jam.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <Box width={30} mx={1}>
+                    <img src={unrealIcon} alt="unreal icon" />
+                  </Box>
+                  <Box flexGrow={1} />
+                  <Button
+                    size="small"
+                    href="https://drive.google.com/file/d/13D469q7vsWBwr76AEA80yFDTwabdXCxs/view"
+                  >
+                    Google Drive
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grow>
+          <Grow in timeout={1750}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card variant="outlined" square>
+                <CardMedia
+                  image={nuclearWinterSplashImage}
+                  title="nuclear winter splash"
+                  style={{ height: 200 }}
+                />
+                <CardContent style={{ height: 120 }}>
+                  <Typography variant="h5">Nuclear Winter</Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    Top down 2D pixel art action game made for an Unreal Engine
+                    4 game jam.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <Box width={30} mx={1}>
+                    <img src={unrealIcon} alt="unreal icon" />
+                  </Box>
+                  <Box flexGrow={1} />
+                  <Button
+                    size="small"
+                    href="https://43k.itch.io/nuclear-winter"
+                  >
+                    Itch.io
                   </Button>
                 </CardActions>
               </Card>
@@ -325,7 +303,7 @@ export default function Home() {
                     component={GatsbyLink}
                     to="/racekit/"
                   >
-                    Read Case Study
+                    Read More
                   </Fab>
                 </Box>
               </Grid>
@@ -361,7 +339,7 @@ export default function Home() {
                     component={GatsbyLink}
                     to="/baseballoons/"
                   >
-                    Read Case Study
+                    Read More
                   </Fab>
                 </Box>
               </Grid>
@@ -372,13 +350,8 @@ export default function Home() {
       <Box my={2}>
         <Container maxWidth="sm">
           <Fade in timeout={1200}>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h5" gutterBottom>
               Prototypes
-            </Typography>
-          </Fade>
-          <Fade in timeout={1450}>
-            <Typography variant="body1">
-              Not every idea makes it, but something is always learned!
             </Typography>
           </Fade>
         </Container>

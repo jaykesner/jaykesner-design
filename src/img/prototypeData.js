@@ -8,8 +8,15 @@ import smashfieldDialog from "./sf3d-dialog.gif"
 import smashfieldStunned from "./sf3d-stunned.gif"
 import airCombat from "./air-combat.gif"
 import bulbasaur from "./bulbfinal4.gif"
+import goblin from "./goblin-collect.gif"
 
 export default [
+  {
+    img: goblin, // import image from "../img/imageName.png"
+    title: "UE4 Prototype",
+    cols: 3,
+    rows: 2,
+  },
   {
     img: boostKartImage, // import image from "../img/imageName.png"
     title: "Boost Kart Racing",

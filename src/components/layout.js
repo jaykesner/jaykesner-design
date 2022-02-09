@@ -87,7 +87,7 @@ export default function Layout(props) {
           <Divider />
         </Box>
         <Typography variant="body2" align="center">
-          Copyright Jay Kesner 2020
+          Copyright Jay Kesner 2022
         </Typography>
       </Box>
     </ThemeProvider>
