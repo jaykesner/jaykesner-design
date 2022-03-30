@@ -5,7 +5,6 @@ import {
   Container,
   Grid,
   Fab,
-  Link,
   Fade,
   GridList,
   GridListTile,
@@ -60,10 +59,9 @@ export default function Home() {
                 <Box my={1}>
                   <Typography variant="subtitle1" gutterBottom>
                     I'm a North Carolina based independent game designer and
-                    developer. <strong>Pragmatic</strong> and{" "}
-                    <strong>solutions-oriented </strong>
-                    with a passion for <strong>scripting</strong> and{" "}
-                    <strong>game engines</strong>.
+                    developer. I enjoy all aspects of the game design process,
+                    from concept and asset creation to technical tools and
+                    iteration.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom>
                     I enjoy learing new and creative ways of combining
