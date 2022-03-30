@@ -66,7 +66,7 @@ export default function Home() {
                     <strong>game engines</strong>.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom>
-                    I emjoy learing new and creative ways of combining
+                    I enjoy learing new and creative ways of combining
                     programming, art, and sound to make the next great
                     experience, realizing projects from ideas to implementation.
                   </Typography>
