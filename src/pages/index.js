@@ -306,7 +306,7 @@ export default function Home() {
               <Grid item xs={12} sm={6}>
                 <Box color="common.white">
                   <Typography variant="h3" gutterBottom>
-                    Race Kit Design
+                    Race Kit Development
                   </Typography>
                   <Typography variant="body1" gutterBottom>
                     Check out how I used Blueprint visual scripting in Unreal
