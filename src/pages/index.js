@@ -297,7 +297,7 @@ export default function Home() {
           <Grid container direction="row-reverse">
             <Fade in timeout={1100}>
               <Grid item xs={12} sm={6}>
-                <Box textAlign="center" px={5} py={2}>
+                <Box textAlign="center" mx={10} my={2}>
                   <img src={raceKitImage} width="150" alt="race kit" />
                 </Box>
               </Grid>
