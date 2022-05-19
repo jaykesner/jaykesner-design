@@ -32,7 +32,11 @@ import prototypeData from "../img/prototypeData"
 
 export default function Home() {
   return (
-    <Layout header1="Game Design Portfolio" header2="Jay Kesner" hasEmailButton>
+    <Layout
+      header1="Game Development Portfolio"
+      header2="Jay Kesner"
+      hasEmailButton
+    >
       <Container maxWidth="md">
         <Box my={4}>
           <Grid container>
@@ -59,9 +63,9 @@ export default function Home() {
                 <Box my={1}>
                   <Typography variant="subtitle1" gutterBottom>
                     I'm a North Carolina based independent game designer and
-                    developer. I enjoy all aspects of the game design process,
+                    developer. I enjoy all aspects of the game creation process,
                     from concept and asset creation to technical tools and
-                    iteration.
+                    programming iteration.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom>
                     I enjoy learing new and creative ways of combining
@@ -91,6 +95,9 @@ export default function Home() {
                 />
                 <CardContent style={{ height: 120 }}>
                   <Typography variant="h5">Baseballoons</Typography>
+                  <Typography variant="caption" color="textSecondary">
+                    Design, Programming, Art
+                  </Typography>
                   <Typography variant="body2" color="textSecondary">
                     Colorful 3D home run contest made for the Apple App Store.
                   </Typography>
@@ -154,6 +161,9 @@ export default function Home() {
                 />
                 <CardContent style={{ height: 120 }}>
                   <Typography variant="h5">Spring Shapes</Typography>
+                  <Typography variant="caption" color="textSecondary">
+                    Design, Programming, Art
+                  </Typography>
                   <Typography variant="body2" color="textSecondary">
                     Flingy 2D tapping challenge course made for the Apple App
                     Store.
@@ -189,8 +199,11 @@ export default function Home() {
                   title="race kit splash"
                   style={{ height: 200 }}
                 />
-                <CardContent style={{ height: 120 }}>
+                <CardContent style={{ height: 140 }}>
                   <Typography variant="h5">Race Kit</Typography>
+                  <Typography variant="caption" color="textSecondary">
+                    Design & Programming
+                  </Typography>
                   <Typography variant="body2" color="textSecondary">
                     Positional racing system created using Blueprints for the
                     Unreal Engine 4 Marketplace.
@@ -219,8 +232,11 @@ export default function Home() {
                   title="dark sector splash"
                   style={{ height: 200 }}
                 />
-                <CardContent style={{ height: 120 }}>
+                <CardContent style={{ height: 140 }}>
                   <Typography variant="h5">Dark Sector</Typography>
+                  <Typography variant="caption" color="textSecondary">
+                    Design, Programming, Art
+                  </Typography>
                   <Typography variant="body2" color="textSecondary">
                     3D first person shooter made for an Unreal Engine 4 mega
                     jam.
@@ -249,8 +265,11 @@ export default function Home() {
                   title="nuclear winter splash"
                   style={{ height: 200 }}
                 />
-                <CardContent style={{ height: 120 }}>
+                <CardContent style={{ height: 140 }}>
                   <Typography variant="h5">Nuclear Winter</Typography>
+                  <Typography variant="caption" color="textSecondary">
+                    Design, Programming, Art
+                  </Typography>
                   <Typography variant="body2" color="textSecondary">
                     Top down 2D pixel art action game made for an Unreal Engine
                     4 game jam.
