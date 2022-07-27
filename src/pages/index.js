@@ -68,7 +68,7 @@ export default function Home() {
                     programming iteration.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom>
-                    I enjoy learing new and creative ways of combining
+                    I enjoy learning new and creative ways of combining
                     programming, art, and sound to make the next great
                     experience, realizing projects from ideas to implementation.
                   </Typography>
